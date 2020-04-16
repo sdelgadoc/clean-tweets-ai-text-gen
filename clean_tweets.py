@@ -59,5 +59,8 @@ with open('538_usernames.txt_tweets.csv') as f:
                 if token.dep_ == "nsubj" and comma_found == True:
                     filter = -2
             
+        ## Rule: If any of the objects of the sentence are pronouns, the fail
+        # TODO: Write code
+        
         
         if filter == -2: print(row[0])
