@@ -60,7 +60,9 @@ with open('538_usernames.txt_tweets.csv') as f:
                     filter = -2
             
         ## Rule: If any of the objects of the sentence are pronouns, the fail
-        # TODO: Write code
-        
+        for token in doc:
+            if token.dep_ == "dobj" or token.dep_ == "obj":
+                if token.pos_ != "PRON":
+                    filter = -3
         
         if filter == -2: print(row[0])
