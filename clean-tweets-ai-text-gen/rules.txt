@@ -1,0 +1,23 @@
+Only run analysis on first sentence.
+
+*If nsubj is PROPN then yes (it means the subject is a named person or thing)
+*If nsubj is NOUN then yes (it means the subject is a person or thing)
+*If nsubj is "I" then yes (it means the writer has an opinion)
+
+If the object of the sentence is a pronoun the no
+    Ex: ["The majority of my replies think it's crazy, but I think it's   credible, even if I'm not sure it's 'right,' and I think it's consistent with the last month, whether it's the Klobucharge or the post-IA Bloomberg surge. A lot of moderate vote seem willing to back the hot hand"]
+
+If you start with a clause that ties to something else then no
+    Ex: ['More than anything though, a good development for Sanders, who still isn’t the overwhelming focal point of attack despite being a pretty clear favorite at this point']
+    Ex: ["As an aside, we've given them a full list of the precincts involved here and they're still putting it out"]
+    Ex: ["At the same time, Iowa was now being compelled to release  tabulated vote counts for the first time."]
+    Ex: ["Alright, what's the line on the margin in South Carolina? I'll open here at Biden by 15, are you taking the over (on Biden margin) or under?"]
+    Ex: ["On balance though, I'd guess that the average critical post in my reply is overestimating the importance of early voting here. It's not a massive share of the vote in most states right now. Decided voters are likeliest to do it; many Dems are holding back on their votes in CA"]
+
+If you start with a conjuction then no (It sounds like you're referencing something else)
+    Ex: ["And the president's nonvoters are just as likely as Democratic nonvoters to say they'll turn out in 2020, unlike our polling from 2018 and suggesting that the president would remain competitive in a high turnout election"]
+    Ex: ["But I genuinely don't believe you had to be Beto to become a phenom running in Texas in 2018 against Ted Cruz."]
+
+
+
+If no nsubj then no (it means there's no subject)
